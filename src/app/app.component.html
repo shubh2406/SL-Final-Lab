@@ -1,0 +1,27 @@
+<mat-toolbar color="accent">
+  <span><mat-icon>calculate</mat-icon></span>Calculator
+</mat-toolbar>
+
+<br>
+<br>
+<mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Enter 1st Number</mat-label>
+  <input matInput name="num1" type="number" [(ngModel)]="num1">
+</mat-form-field>
+<br>
+<br>
+<mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Enter 2nd  Number</mat-label>
+  <input matInput name="num2" type="number" [(ngModel)]="num2">
+</mat-form-field>
+<br>
+<br>
+<button mat-raised-button color="primary" (click)="add()">+</button>
+<button mat-raised-button color="primary" (click)="sub()">-</button>
+<button mat-raised-button color="primary" (click)="mul()">X</button>
+<button mat-raised-button color="primary" (click)="divide()">/</button>
+<button mat-raised-button color="primary" (click)="Fact()">Factorial</button>
+<button mat-raised-button color="primary" (click)="prime()">Prime</button>
+<br>
+<br>
+<mat-card>Result : {{ !num5 ? num3 : num4 }}</mat-card>
